@@ -32,13 +32,26 @@ namespace CalculaterNUnit
 
             Assert.That(gange, Is.EqualTo(16));
         }
+        [Test]
+        public void Test3()
+        {
+            double gange = uut.Multiply(2, 8);
+            double plus = uut.Add(2, 8);
+
+            double sum = uut.GetSum(gange + plus);
+
+            Assert.That(sum, Is.EqualTo(26));
+        }
+
+
+
         //[TestCase(4,3, ExpectedResult = 12)]
         //public void Test3(double a, double b)
         //{
 
         //    double gange = uut.Multiply(a, b);
 
-            
+
         //}
     }
 }

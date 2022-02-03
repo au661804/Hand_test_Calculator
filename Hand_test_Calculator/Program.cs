@@ -16,6 +16,7 @@ namespace Hand_test_Calculator
             var minus = Calculator.Subtract(num1, num2);
             var gange = Calculator.Multiply(num1, num2);
             var exp = Calculator.Power(num1, num2);
+            var sum = Calculator.GetSum(plus + minus + gange + exp);
 
             Console.WriteLine("Adding " + num1 + " and " + num2);
             Console.WriteLine("Result: " + plus);
@@ -25,7 +26,7 @@ namespace Hand_test_Calculator
             Console.WriteLine("Result: " + gange);
             Console.WriteLine( num1 + " to the power of " + num2);
             Console.WriteLine("Result: " + exp);
-
+            Console.WriteLine("Sum of numbers:" + sum);
 
             Console.ReadKey();
         }
