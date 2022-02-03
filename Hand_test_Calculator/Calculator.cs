@@ -23,5 +23,10 @@ namespace Hand_test_Calculator
         {
             return Math.Pow(x, exp);
         }
+
+        public double Divide(double x, double y)
+        {
+            return x / y;
+        }
     }
 }
