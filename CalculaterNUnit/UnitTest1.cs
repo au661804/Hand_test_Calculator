@@ -71,6 +71,14 @@ namespace CalculaterNUnit
             Assert.That(pow, Is.EqualTo(result));
 
         }
+        [Test]
+        public void clearTest()
+        {
+            double sum = uut.Add(20, 20);
+            uut.Clear();
+
+            Assert.That(uut.Accumulator, Is.EqualTo(0));
+        }
 
 
 
