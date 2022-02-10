@@ -43,5 +43,12 @@ namespace Hand_test_Calculator
             return x / y;
 
         }
+
+        public void Clear()
+        {
+            Accumulator = 0;
+            
+        }
+
     }
 }

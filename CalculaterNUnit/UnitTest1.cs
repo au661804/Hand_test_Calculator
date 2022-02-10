@@ -17,7 +17,7 @@ namespace CalculaterNUnit
         }
 
         [Test]
-        public void Test1()
+        public void plustest()
         {
 
             double plus = uut.Add(2, 8);
@@ -55,6 +55,14 @@ namespace CalculaterNUnit
             double sum = uut.GetSum(gange + plus);
 
             Assert.That(sum, Is.EqualTo(26));
+        }
+        [Test]
+        public void clearTest()
+        {
+            double sum = uut.Add(20, 20);
+            uut.Clear();
+
+            Assert.That(uut.Accumulator, Is.EqualTo(0));
         }
 
 
