@@ -54,20 +54,31 @@ namespace CalculaterNUnit
 
             double gange = uut.Multiply(a, b);
 
-
-
-
         }
+        //Clear
         [Test]
-        public void clearTest()
+        public void clearTestWithPositiveNumbers()
         {
             double sum = uut.Add(20, 20);
             uut.Clear();
 
             Assert.That(uut.Accumulator, Is.EqualTo(0));
         }
+        public void clearTestWithNegativeNumbers()
+        {
+            double sum = uut.Add(20, -40);
+            uut.Clear();
 
+            Assert.That(uut.Accumulator, Is.EqualTo(0));
+        }
+        public void clearTestWithDouble()
+        {
+            double sum = uut.Add(20, 2.2);
+            uut.Clear();
 
+            Assert.That(uut.Accumulator, Is.EqualTo(0));
+        }
+        //sum
 
         [Test]
         public void SumTest()
@@ -78,6 +89,8 @@ namespace CalculaterNUnit
 
             Assert.That(uut.Accumulator, Is.EqualTo(28));
         }
+        
+       
 
 
     }

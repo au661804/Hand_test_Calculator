@@ -20,7 +20,7 @@ namespace Hand_test_Calculator
 
             var dividere = Calculator.Divide(num1, num2);
 
-            var sum = Calculator.GetSum(plus + minus + gange + exp+dividere);
+            var sum = Calculator.GetSum();
 
 
             Console.WriteLine("Adding " + num1 + " and " + num2);

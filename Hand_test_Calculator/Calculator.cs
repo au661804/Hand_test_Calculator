@@ -36,6 +36,11 @@ namespace Hand_test_Calculator
 
         }
 
+        public void Clear()
+        {
+            Accumulator = 0;
+        }
+
 
         public double GetSum()
         {
