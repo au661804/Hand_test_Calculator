@@ -16,7 +16,7 @@ namespace CalculaterNUnit
 
         }
 
-        [TestCase(8, 2, 10)]
+        [TestCase(2, 2, 4)]
         [TestCase(18, 2, 20)]
         [TestCase(32, -4, 28)]
         public void PlusTest(double a, double b, double result)
