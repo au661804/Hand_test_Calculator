@@ -61,7 +61,7 @@ namespace CalculaterNUnit
 
         [TestCase(4, 3, 64)]
         [TestCase(2, 3, 8)]
-        [TestCase(6, 0, 1)]
+        [TestCase(6, 1, 6)]
         public void PowTest(double a, double b, double result)
         {
 
