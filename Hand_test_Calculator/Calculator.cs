@@ -8,47 +8,42 @@ namespace Hand_test_Calculator
 
         public double Add(double a, double b)
         {
+            Accumulator += a + b;
             return a + b;
         }
 
         public double Subtract(double a, double b)
         {
+            Accumulator += a - b;
             return a - b;
         }
 
         public double Multiply(double a, double b)
         {
+            Accumulator += a * b;
             return a * b;
         }
 
         public double Power(double x, double exp)
         {
+            Accumulator += Math.Pow(x, exp);
             return Math.Pow(x, exp);
         }
-
-
-        public double GetSum(double accumulator)
-        {
-            Accumulator += accumulator;
-
-
-            return Accumulator;
-
-        }
-
-
-
         public double Divide(double x, double y)
         {
+            Accumulator += x / y;
             return x / y;
 
         }
 
-        public void Clear()
+
+        public double GetSum()
         {
-            Accumulator = 0;
             
+            return Accumulator;
+
         }
 
+        
     }
 }
