@@ -8,7 +8,7 @@ namespace Hand_test_Calculator
 
         public double Add(double a, double b)
         {
-            return a + b; 
+            return a + b;
         }
 
         public double Subtract(double a, double b)
@@ -26,17 +26,22 @@ namespace Hand_test_Calculator
             return Math.Pow(x, exp);
         }
 
+
         public double GetSum(double accumulator)
         {
             Accumulator += accumulator;
 
 
             return Accumulator;
+
         }
+
+
 
         public double Divide(double x, double y)
         {
             return x / y;
+
         }
     }
 }
