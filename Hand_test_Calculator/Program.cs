@@ -36,6 +36,7 @@ namespace Hand_test_Calculator
             Console.WriteLine("Result: " + dividere);
 
             Console.WriteLine("Sum of numbers:" + sum);
+            Console.WriteLine("The end!");
 
 
             Console.ReadKey();
